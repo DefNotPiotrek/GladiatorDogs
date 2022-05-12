@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 import static java.lang.System.in;
 import static pl.chwilaprogramowaniadladebila.DogEnemy.*;
-import static pl.chwilaprogramowaniadladebila.Main.game;
 
 public class Menu {
     static Scanner scanner = new Scanner(in);

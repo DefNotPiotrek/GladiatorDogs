@@ -1,7 +1,5 @@
 package pl.chwilaprogramowaniadladebila;
 
-import static pl.chwilaprogramowaniadladebila.DogEnemy.DrawName;
-import static pl.chwilaprogramowaniadladebila.DogEnemy.DrawNumberName;
 import static pl.chwilaprogramowaniadladebila.Menu.*;
 import static pl.chwilaprogramowaniadladebila.Upgrade.UpgradeHero;
 
