@@ -4,6 +4,7 @@ import static pl.chwilaprogramowaniadladebila.Menu.Agree;
 import static pl.chwilaprogramowaniadladebila.Menu.Description;
 
 public class BossFight  {
+    public static boolean bossfight = false;
 
     public static void BossFighting() throws InterruptedException {
 

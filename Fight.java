@@ -17,6 +17,7 @@ public class Fight {
     public static void FightAgainstEnemy() throws InterruptedException {
 
         while(fight) {
+            Regen();
             Stats();
             while (yourTurn) {
                 Scanner scanner = new Scanner(System.in);
@@ -37,7 +38,6 @@ public class Fight {
                 EnemyAI.ChooseAction();
             }
             EndOfTheBattle.Lose();
-            Regen();
         }
     }
 
@@ -47,26 +47,26 @@ public class Fight {
     }
 
     static void Regen(){
-        int healing = (int) (DogHero.hp * 0.10);
+        int healing = (int) (DogHero.hp * 0.03);
         actualHp += healing;
         if (Fight.actualHp >= DogHero.hp) {
             int reduce = Fight.actualHp - DogHero.hp;
             Fight.actualHp -= reduce;
         }
-        int staminaRegen = (int) (DogHero.stamina * 0.10);
+        int staminaRegen = (int) (DogHero.stamina * 0.03);
         actualStamina += staminaRegen;
         if (Fight.actualStamina >= DogHero.stamina) {
             int reduce = Fight.actualStamina - DogHero.stamina;
             Fight.actualStamina -= reduce;
         }
         System.out.println("*Wyregenowałeś " + healing + " hp i " + staminaRegen + " staminy*");
-        healing = (int) (DogEnemy.enemyHp * 0.05);
+        healing = (int) (DogEnemy.enemyHp * 0.03);
         enemyActualHp += healing;
         if (Fight.enemyActualStamina >= DogEnemy.enemyStamina) {
             int reduce = Fight.enemyActualHp - DogEnemy.enemyHp;
             Fight.enemyActualHp -= reduce;
         }
-        staminaRegen = (int) (DogEnemy.enemyStamina * 0.05);
+        staminaRegen = (int) (DogEnemy.enemyStamina * 0.03);
         enemyActualStamina += staminaRegen;
         if (Fight.enemyActualStamina >= DogEnemy.enemyStamina) {
             int reduce = Fight.enemyActualStamina - DogEnemy.enemyStamina;

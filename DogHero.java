@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DogHero {
 
-    public static int hp = 600;
+    public static int hp = 100;
     public static int damage = 200;
     public static int stamina = 100;
     public static int xp = 0;

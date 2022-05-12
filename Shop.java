@@ -25,6 +25,8 @@ public class Shop {
     }
 
     public static void ChooseUpgrade(){
+        ShoppingItems.purchase = true;
+        ShoppingItems.confirmPurchase = true;
         System.out.println("Wzmocnij:\n1.Siłę\n2.Staminę\n3.Punkty Życia\n4.Opuść Sklep\nPosiadasz: " + DogHero.gold + " złotych monet");
         int choose = scanner.nextInt();
         switch (choose){

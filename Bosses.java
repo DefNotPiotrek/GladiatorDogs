@@ -47,7 +47,6 @@ public class Bosses {
             xpGain = 40000;
             earnMoney = 30000;
         }
-        EndOfTheBattle.Win();
     }
 
 }

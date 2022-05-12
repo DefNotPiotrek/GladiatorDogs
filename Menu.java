@@ -67,6 +67,7 @@ public class Menu {
                     Agree();
                 }
                 case 2 -> {
+                    BossFight.bossfight = true;
                     BossFight.BossFighting();
                 }
                 case 3 -> {
@@ -91,6 +92,7 @@ public class Menu {
                 }
                 case "nie" -> {
                     wannaFight = false;
+                    BossFight.bossfight = false;
                 }
                 default -> System.out.println("Nie podano żadnej, albo podano błędną wartość.");
 
